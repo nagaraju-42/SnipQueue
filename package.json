@@ -1,0 +1,30 @@
+{
+  "name": "snipq",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SnipQ — Real-Time Salon & Barber Slot Booking Platform",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "type-check": "pnpm -r type-check",
+    "test": "pnpm --filter @snipq/api test",
+    "clean": "pnpm -r clean"
+  },
+  "keywords": ["salon", "barber", "booking", "queue", "real-time"],
+  "author": "Nagaraju",
+  "license": "PRIVATE",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@firebase/util",
+      "@prisma/client",
+      "@prisma/engines",
+      "bcrypt",
+      "esbuild",
+      "prisma",
+      "protobufjs",
+      "sharp",
+      "unrs-resolver"
+    ]
+  }
+}
